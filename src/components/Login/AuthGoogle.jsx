@@ -2,6 +2,8 @@ import React from 'react';
 import {useHistory} from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import Style from '../../styles/Login.module.css';
+import googleImg from '../../images/google.svg';
 
 function authSocialMedia (){
     const googleProvider =new firebase.auth.GoogleAuthProvider();
@@ -18,9 +20,9 @@ const Auth = () =>{
     }
 //This is the template html
     return(
-        <div>
-   <p>O inicia sesión con</p>
-    <img src={'hi'} className="btn" alt="googleLogin" onClick={google}/>
+        <div className={`row justify-content-center`}>
+   <p className={`${Style.o}`}>-O-</p>
+    <img src={googleImg} className={`${Style.google}`} alt="googleLogin" onClick={google}/>
         </div>
     )
 
