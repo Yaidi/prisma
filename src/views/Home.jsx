@@ -12,7 +12,9 @@ const Home = ()=>{
                 <img className={`home-world ${Style.world}`}src="https://firebasestorage.googleapis.com/v0/b/prismacoders.appspot.com/o/onboarding%2Fworld.png?alt=media&token=31f06aa2-2e8c-4473-b030-9b9403fa218b" alt="World"/>
                 <img className={`home-girl ${Style.girl}`}src="https://firebasestorage.googleapis.com/v0/b/prismacoders.appspot.com/o/onboarding%2Frosegirl.png?alt=media&token=1a6e18ed-e3bb-47d8-9d5d-ca6be7048c5e" alt="World"/>
                 <p className={`home-text ${Style.text}`}>Juega, aprende y sé la heroína del mundo de las finanzas</p>
-                <Link to='/Register'><button className={`home-skip ${Style.skip}`}>Skip</button></Link>
+                <div className={`home-boxbtn ${Style.boxbtn}`}>
+                    <Link to='/Register'><button className={`home-skip ${Style.skip}`}>¡Empieza!</button></Link>
+                </div>
             </section>
             
         </div>

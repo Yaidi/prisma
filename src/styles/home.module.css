@@ -38,12 +38,24 @@
     left: 35%;
     width: 100px;
 }
+.boxbtn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
 
 .skip{
     width: 40px;
     border: none;
-    color: none;
+    color: #FFFFFF;
     font: 'Roboto';
+    background-color: #C7007D;
+    width: 314px;
+    height: 48px;
+    border-radius: 20px;
+    text-transform: uppercase;
 }
 
 .text{
