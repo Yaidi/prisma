@@ -9,7 +9,7 @@ export const arrayHeroines =[
      name:'Rachel',
      description:'',
     },
-    {image: 'https://firebasestorage.googleapis.com/v0/b/prismacoders.appspot.com/o/heroines%2Frachel.png?alt=media&token=81701d05-32bf-48ae-8309-f27b54e0257d',
+    {image: 'https://firebasestorage.googleapis.com/v0/b/prismacoders.appspot.com/o/heroines%2Fisa.png?alt=media&token=15704a92-333b-4ba6-be9b-4988b9184c95',
      name:'Violet',
      description:'',
     },
