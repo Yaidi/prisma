@@ -2,9 +2,8 @@ import React from 'react';
 
 const Menu = ()=>{
     return(
-        <div>
-            Soy Menu
-        </div>
+        <div className='menu-container'>
+            </div>
     )
 }
 

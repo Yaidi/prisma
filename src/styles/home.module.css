@@ -1,0 +1,103 @@
+.home{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.onboarding{
+    display: flex;
+    flex-direction: column;
+    height: 667px;
+}
+
+.logo{
+    width: 70%;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.quote{
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+.world{
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.girl{
+    position: absolute;
+    top: 330px;
+    left: 35%;
+    width: 100px;
+}
+
+.skip{
+    width: 40px;
+    border: none;
+    color: none;
+    font: 'Roboto';
+}
+
+.text{
+    font-size: 18px;
+    padding: 25px;
+    text-align: center;
+}
+
+@media screen and (min-width:375px){
+    .girl{
+        position: absolute;
+        top: 330px;
+        left: 38%;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width:425px){
+    
+    .logo{
+        width: 213px;
+        margin: auto;
+        padding-top: 120px;
+        padding-bottom: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .quote{
+        width: 340px;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+
+    .girl{
+        position: absolute;
+        top: 340px;
+        left: 40%;
+        width: 100px;
+    }
+}
+@media screen and (min-width:768px){
+    .girl{
+        position: absolute;
+        top: 340px;
+        left: 43%;
+        width: 100px;
+    }
+}
+@media screen and (min-width:1024px){
+    .girl{
+        position: absolute;
+        top: 340px;
+        left: 45%;
+        width: 100px;
+    }
+}
