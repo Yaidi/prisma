@@ -5,6 +5,7 @@ import PrivateRoute from './PrivateRoute';
 import Home from '../views/Home';
 import Menu from '../views/Menu';
 import Levels from '../views/Levels';
+import Question from '../views/Question';
 
 const Router = () => {
     return(
@@ -25,6 +26,9 @@ const Router = () => {
             </PrivateRoute>
 
             <PrivateRoute path='/levels/:id' component={Levels}/>
+
+            <PrivateRoute path={`/level:id/:hero`} component={Question} >
+            </PrivateRoute>
     
         </Switch>
      
