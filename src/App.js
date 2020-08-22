@@ -5,7 +5,9 @@ import Router from './routes/Router';
 function App() {
   return (
     <AuthContextProvider>
+      <div className="container-fluid body-content">
       <Router/>
+      </div>
     </AuthContextProvider>
   );
 }

@@ -1,0 +1,23 @@
+.img{
+    width: 90%;
+}
+.bgheroine{
+    background: #AFD0ED;
+    border-radius: 25px;
+    width: 150px;
+    height: 210px;
+}
+.bgheroine:hover{
+    width: 60%;
+}
+
+.card{
+    border: transparent;
+}
+.name{
+    color: #703796;
+    font-weight: bold;
+}
+.description{
+    color: #96A7AF;
+}
