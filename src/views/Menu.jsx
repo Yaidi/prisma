@@ -2,9 +2,11 @@ import React from 'react';
 import CardHeroine from '../components/CardHeroine';
 import { arrayHeroines } from '../data/arrayHeroines';
 import Style from '../styles/CardHeroine.module.css';
+import Navbar from '../components/Navbar';
 
 const Menu = ()=>{
     return(
+        <div><Navbar></Navbar>
         <div className={`container-fluid row`}>
             <h1>Escoge a tu heroína</h1> 
           {arrayHeroines.map((heroine, index)=>
@@ -12,6 +14,7 @@ const Menu = ()=>{
             <CardHeroine image= {heroine.image} name={heroine.name} description={heroine.description}/>
         </section>
         )}
+        </div>
         </div>
     )
 }
