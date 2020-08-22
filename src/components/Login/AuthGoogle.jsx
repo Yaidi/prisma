@@ -1,6 +1,7 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
 
 function authSocialMedia (){
     const googleProvider =new firebase.auth.GoogleAuthProvider();
