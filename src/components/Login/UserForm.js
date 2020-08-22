@@ -24,7 +24,7 @@ function sendData (e) {
     e.preventDefault();
      choose[windowchoose](email, password)
         .then( () =>{
-        history.push('/Home')
+        history.push('/Menu')
         }
         )
         .catch((e) => {
