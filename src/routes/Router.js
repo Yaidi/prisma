@@ -22,6 +22,10 @@ const Router = () => {
             <PrivateRoute path='/Menu'>
                <Menu/>
             </PrivateRoute>
+
+            <PrivateRoute path='/ProductsDescription/:id'>
+
+            </PrivateRoute>
     
         </Switch>
      
