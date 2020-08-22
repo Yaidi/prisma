@@ -4,6 +4,7 @@ import UserForm from '../components/Login/UserForm';
 import PrivateRoute from './PrivateRoute';
 import Home from '../views/Home';
 import Menu from '../views/Menu';
+import Levels from '../views/Levels';
 
 const Router = () => {
     return(
@@ -23,9 +24,7 @@ const Router = () => {
                <Menu/>
             </PrivateRoute>
 
-            <PrivateRoute path='/ProductsDescription/:id'>
-
-            </PrivateRoute>
+            <PrivateRoute path='/levels/:id' component={Levels}/>
     
         </Switch>
      
