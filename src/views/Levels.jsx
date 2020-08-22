@@ -4,6 +4,7 @@ import { arrayLevels } from '../data/arrayLevels';
 import Style from '../styles/Levels.module.css';
 import next from '../images/next.svg';
 import coin from '../images/coin.png';
+import Header from '../components/Header';
 
 const Levels = ({ match }) =>{
     const heroine = match.params.id;
@@ -11,6 +12,8 @@ const Levels = ({ match }) =>{
     const levels = levelsHeroine[0].levels;
     return(
         <div>
+            <Header title={heroine} />
+        <div className={`${Style.container}`}>
            { levels.map((level, index)=>
             <section className={`card mb-3 ${Style.bgcard}`} key={index}>
             <div className="card-body row g-0">
@@ -33,6 +36,7 @@ const Levels = ({ match }) =>{
            )
 
            }
+        </div>
         </div>
     )
         
