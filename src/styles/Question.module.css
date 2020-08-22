@@ -1,0 +1,29 @@
+.button{
+    background: #C7007D;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: normal;
+}
+.text{
+    color: #703796;
+}
+.text label{
+    color: #96A7AF;
+}
+.container{
+    min-width: 330px;
+    min-height: 400px;
+    max-width: 358px;
+    max-height: 600px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.text input:focus{
+    background: #703796;
+}
+.text input:active{
+    background: #703796;
+}

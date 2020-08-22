@@ -1,0 +1,19 @@
+.bgcard{
+    background: #AFD0ED;
+    border-radius: 25px;
+}
+.text{
+    color: #703796;
+}
+.money{
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 70px;
+}
+.next{
+    max-height: 60px;
+    min-height: 60px;
+}
+.title{
+    font-weight: bold;
+}

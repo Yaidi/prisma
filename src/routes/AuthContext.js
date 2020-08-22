@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import firebase from 'firebase';
+import Loader from '../views/Loading';
 
 const AuthContext = React.createContext();
 
@@ -16,7 +17,7 @@ export const AuthContextProvider = ({ children }) => {
     }, []);
 
     if (loading) {
-        return <>CARGANDO...</>
+        return <Loader/>
     }
 
     return (
