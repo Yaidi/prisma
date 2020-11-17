@@ -2,11 +2,14 @@ import React from 'react';
 import {arrayQuestions} from '../data/arrayQuestions';
 import Style from '../styles/Question.module.css';
 import StoryQuestion from '../components/StoryQuestion';
+import Header from '../components/Header';
 const Question = ()=>{
     const question= arrayQuestions[0].qa;
     const answers = arrayQuestions[0].answers;
     return(
         <div>
+            <Header title='Nivel 1'/>
+        <div className={`${Style.container}`}>
             <StoryQuestion/>
         
         <form className={`row ${Style.text}`} >
@@ -20,6 +23,7 @@ const Question = ()=>{
             }
     <button type='submit' className={`btn btn-lg btn-block ${Style.button}`} >ENVIAR RESPUESTA</button>
     </form>
+    </div>
     </div>
     )
 }

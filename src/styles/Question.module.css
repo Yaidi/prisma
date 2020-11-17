@@ -27,3 +27,6 @@
 .text input:active{
     background: #703796;
 }
+.container{
+    padding-top: 10rem;
+}
