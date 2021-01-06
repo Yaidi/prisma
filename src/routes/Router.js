@@ -1,11 +1,11 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import UserForm from "../components/Login/UserForm";
-import PrivateRoute from "./PrivateRoute";
-import Home from "../views/Home";
-import Menu from "../views/Menu";
-import Levels from "../views/Levels";
-import Question from "../views/Question";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import UserForm from '../components/Login/UserForm';
+import PrivateRoute from './PrivateRoute';
+import Home from '../views/Home';
+import Menu from '../views/Menu';
+import Levels from '../views/Levels';
+import Question from '../views/Question';
 
 const Router = () => {
   return (
@@ -27,7 +27,7 @@ const Router = () => {
       <PrivateRoute path="/levels/:id" component={Levels} />
 
       <PrivateRoute
-        path={`/level:id/:hero`}
+        path={'/level:id/:hero'}
         component={Question}
       ></PrivateRoute>
     </Switch>

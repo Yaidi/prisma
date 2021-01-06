@@ -21,14 +21,19 @@
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": [
+            "warn",
+            {
+                "singleQuote": true
+            }
+        ],
         "no-unused-vars": [
-            "error",
+            "warn",
             {
                 "argsIgnorePattern": "^_"
             }
         ],
-        "no-var": "error"
+        "quotes": [2, "single", { "avoidEscape": true }]
     },
     "reportUnusedDisableDirectives": true,
     "settings": {

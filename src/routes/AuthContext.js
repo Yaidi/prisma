@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import firebase from "firebase";
-import Loader from "../views/Loading";
+import React, { useState, useEffect } from 'react';
+import firebase from 'firebase';
+import Loader from '../views/Loading';
 
 const AuthContext = React.createContext();
 
