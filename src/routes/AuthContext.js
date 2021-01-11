@@ -5,26 +5,24 @@ import Loader from '../views/Loading';
 const AuthContext = React.createContext();
 
 export const AuthContextProvider = ({ children }) => {
-    const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState({});
 
-    useEffect(() => {
-        const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
-            setLoading(false);
-            setUser(user);
-        });
-        return unsubscribe;
-    }, []);
+  useEffect(() => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+      setLoading(false);
+      setUser(user);
+    });
+    return unsubscribe;
+  }, []);
 
-    if (loading) {
-        return <Loader/>
-    }
+  if (loading) {
+    return <Loader />;
+  }
 
-    return (
-        <AuthContext.Provider value={{ user }}>
-            {children}
-        </AuthContext.Provider>
-    )
+  return (
+    <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>
+  );
 };
 
 export default AuthContext;
