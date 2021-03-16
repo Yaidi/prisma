@@ -1,38 +1,17 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import firebase from 'firebase/app';
 import 'firebase/auth';
 import AuthGoogle from './AuthGoogle';
 import Style from '../../styles/Login.module.css';
 
-const choose = {
-  Register: function register(email, password) {
-    return firebase.auth().createUserWithEmailAndPassword(email, password);
-  },
-  Login: function login(email, password) {
-    return firebase.auth().signInWithEmailAndPassword(email, password);
-  },
-};
+import { sendData } from './helpers';
 
 const UserForm = ({ windowChoose, hash }) => {
-  let history = useHistory();
+  const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  function sendData(e) {
-    e.preventDefault();
-    choose[windowChoose](email, password)
-      .then(() => {
-        history.push('/Menu');
-      })
-      .catch((e) => {
-        setError(e.message);
-        setTimeout(() => {
-          setError('');
-        }, 4000);
-      });
-  }
   return (
     <div id={windowChoose}>
       <h1 className={`${Style.title}`}> ¡Bienvenida! </h1>
@@ -41,7 +20,15 @@ const UserForm = ({ windowChoose, hash }) => {
           ? 'Inicia Sesión para continuar'
           : 'Regístrate'}
       </p>
-      <form onSubmit={sendData}>
+      <form
+        onSubmit={sendData({
+          windowChoose,
+          setError,
+          email,
+          password,
+          history,
+        })}
+      >
         {error && <div className={`${Style.error}`}>{error}</div>}
         <div className={'mb-3'}>
           <input

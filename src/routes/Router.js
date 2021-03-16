@@ -13,11 +13,11 @@ const Router = () => {
       <Route exact path="/" component={Home} />
 
       <Route exact path="/Register">
-        <UserForm windowchoose="Register" hash="/Login" />
+        <UserForm windowChoose="Register" hash="/Login" />
       </Route>
 
       <Route path="/Login">
-        <UserForm windowchoose="Login" hash="/Register" />
+        <UserForm windowChoose="Login" hash="/Register" />
       </Route>
 
       <PrivateRoute path="/Menu">
