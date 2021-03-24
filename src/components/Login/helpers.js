@@ -1,9 +1,12 @@
 import firebase from 'firebase/app';
+import { postData } from '../../services/api';
 
 const choose = {
-  Register: function register(email, password) {
-    return firebase.auth().createUserWithEmailAndPassword(email, password);
-  },
+  Register: postData('https://girl-poly.herokuapp.com/users/sign-up', {
+    answer: 42,
+  }).then((data) => {
+    console.log(data);
+  }),
   Login: function login(email, password) {
     return firebase.auth().signInWithEmailAndPassword(email, password);
   },
